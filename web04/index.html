@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 레이아웃 A-4/혼자연습</title>
+    <style>
+        *{margin:0; padding:0;}
+        #wrap{width:1200px; margin:0 auto;}
+        #header{width:100%; display:flex;}
+        #header .logo{width:20%; height:100px; background:#aaa;}
+        #header .nav{width:80%; height:100px; background:#bbb;}
+
+        #slider{width:100%; height:300px; background:#ccc;}
+
+        #main{width:100%; display:flex;}
+        #main .content1{width:33.33%; height:200px; background:#ddd;}
+        #main .content2{width:33.33%; height:200px; background:#eee;}
+        #main .content3{width:33.33%; height:200px; background:#ddd;}
+
+        #footer{width:100%; display:flex; background:#111;}
+        #footer .footer1{width:80%;}
+        #footer .footer1 .footer1_1{width:100%; height:50px; background:#bbb;}
+        #footer .footer1 .footer1_2{width:100%; height:50px; background:#aaa;}
+        #footer .footer2{width:20%; height:100px; background:#111;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="logo"></div>
+            <nav class="nav"></nav>
+        </header>
+        <section id="slider"></section>
+        <main id="main">
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+        </main>
+        <footer id="footer">
+            <div class="footer1">
+                <div class="footer1_1"></div>
+                <div class="footer1_2"></div>
+            </div>
+            <div class="footer2"></div>
+        </footer>
+    </div>
+</body>
+</html>
