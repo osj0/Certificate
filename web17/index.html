@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 레이아웃 E-1</title>
+    <style>
+        *{margin:0; padding:0;}
+        #wrap{width: 100%;}
+        #main{width: 100%; display:flex;height:calc(100vh - 120px);}
+        #header{width: 200px;}
+        #header .logo{width: 100%; height:10%; background:#eee;}
+        #header .nav{width: 100%; height:90%; background:#ddd;}
+
+        .content{width:400px;}
+        .content .banner{width: 100%; height:15%; background:#ccc;}
+        .content .notice{width: 100%; height:35%; background:#bbb;}
+        .content .gal{width: 100%; height:35%; background:#aaa;}
+        .content .link{width: 100%; height:15%; background:#999;}
+
+        .slider{width:calc(100% - 600px); height: 100%;background:#888;}
+
+        #footer{width: 100%;display:flex;}
+        #footer .flogo{width:200px; height: 120px; background:#777;}
+        #footer .footer1{width:calc(100% - 200px);}
+        #footer .footer1 .fmn{width: 100%; height: 60px;background:#666;}
+        #footer .footer1 .copy {width: 100%; height: 60px;background:#555;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="main">
+            <header id="header">
+                <h2 class="logo"></h2>
+                <nav class="nav"></nav>
+            </header>
+            <section class="content">
+                <article class="banner"></article>
+                <article class="notice"></article>
+                <article class="gal"></article>
+                <article class="link"></article>
+            </section>
+           <article class="slider"></article>
+        </main>
+        <footer id="footer">
+            <h2 class="flogo"></h2>
+            <div class="footer1">
+                <div class="fmn"></div>
+                <div class="copy"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
