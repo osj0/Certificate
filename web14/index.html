@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 레이아웃 D-2</title>
+    <style>
+        *{margin:0; padding:0;}
+        #wrap{width:100%; display:flex; flex-wrap:wrap;}
+        #aside{width:200px;}
+        #aside .logo{width:100%; height:200px; background:#eee;}
+        #aside .nav{width:100%; height:450px; background:#ddd;}
+
+        #main{width:calc(100% - 200px);}
+        #slba{width:100%; display:flex;}
+        #slba .slider{width:calc(100% - 230px); height:400px; background:#ccc;}
+        #slba .banner{width:230px; height:400px; background:#bbb;}
+
+        #contents{width:100%; display:flex;}
+        #contents .content1{width:50%; height:250px; background:#aaa;}
+        #contents .content2{width:50%; height:250px; background:#999;}
+
+        #footer{display:flex; width: 100%;}
+        #footer .flogo{width:200px;height:100px; background:#888;}
+        #footer .copy{width:calc(100% - 430px); height:100px; background:#777;}
+        #footer .fm{width:230px; height:100px; background:#666;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <aside id="aside">
+            <h2 class="logo"></h2>
+            <nav class="nav"></nav>
+        </aside>
+        <main id="main">
+            <section id="slba">
+                <div class="slider"></div>
+                <div class="banner"></div>
+            </section>
+            <section id="contents">
+                <div class="content1"></div>
+                <div class="content2"></div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="flogo"></div>
+            <div class="copy"></div>
+            <div class="fm"></div>
+        </footer>
+    </div>
+</body>
+</html>
