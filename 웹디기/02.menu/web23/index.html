@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 메뉴 M-4</title>
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <style>
+        *{margin:0; padding:0;font-family: 'GmarketSans';}
+        li{list-style: none;}
+        a{text-decoration: none; color:#000;}
+
+        #wrap{width: 100%;}
+        #main{width: 100%;display: flex; height:calc(100vh - 100px);} 
+
+        #aside{width: 200px;}
+        #aside .logo{width: 100%; height: 10%; background:#eee;}
+        #aside .nav{width: 100%; height: 90%; background:#ddd;}
+        .nav > ul{}
+        .nav > ul > li{}
+        .nav > ul > li > a{display:block; padding:10px 30px; background:#f00;}
+        .nav > ul > li > a:hover{background:#4e0000; color:#fff;}
+        .nav > ul > li > ul{display:none;}
+        .nav > ul > li > ul > li{}
+        .nav > ul > li > ul > li > a{display:block; padding:10px 30px; background:#0f0;}
+        .nav > ul > li > ul > li > a:hover{color:#fff; background:rgb(0, 71, 0);}
+
+        .contents{width: 400px;}
+        .contents .notice{width: 100%; height: 40%; background:#ccc;}
+        .contents .gal{width: 100%; height: 40%; background:#bbb;}
+        .contents .link{width: 100%; height: 20%; background:#aaa;}
+        .slider{width: calc(100% - 600px); height: 100%; background:#666;}
+
+        #footer{width: 100%;display:flex;}
+        #footer .flogo{width: 200px;height: 100px; background:#999;}
+        #footer .copy{width: calc(100% - 400px);height: 100px; background:#888;}
+        #footer .fm{width: 200px;height: 100px; background:#777;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="main">
+            <aside id="aside">
+                <h2 class="logo"></h2>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="">메뉴1</a>
+                            <ul class="submn">
+                                <li><a href="">서브메뉴1-1</a></li>
+                                <li><a href="">서브메뉴1-2</a></li>
+                                <li><a href="">서브메뉴1-3</a></li>
+                                <li><a href="">서브메뉴1-4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">메뉴2</a>
+                            <ul class="submn">
+                                <li><a href="">서브메뉴2-1</a></li>
+                                <li><a href="">서브메뉴2-2</a></li>
+                                <li><a href="">서브메뉴2-3</a></li>
+                                <li><a href="">서브메뉴2-4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">메뉴3</a>
+                            <ul class="submn">
+                                <li><a href="">서브메뉴3-1</a></li>
+                                <li><a href="">서브메뉴3-2</a></li>
+                                <li><a href="">서브메뉴3-3</a></li>
+                                <li><a href="">서브메뉴3-4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">메뉴4</a>
+                            <ul class="submn">
+                                <li><a href="">서브메뉴4-1</a></li>
+                                <li><a href="">서브메뉴4-2</a></li>
+                                <li><a href="">서브메뉴4-3</a></li>
+                                <li><a href="">서브메뉴4-4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="contents">
+                <article class="notice"></article>
+                <article class="gal"></article>
+                <article class="link"></article>
+            </section>
+            <article class="slider"></article>
+        </main>
+        <footer id="footer">
+            <div class="flogo"></div>
+            <div class="copy"></div>
+            <div class="fm"></div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("nav > ul > li").mouseover(function(){
+                $(this).find(".submn").stop().slideDown();
+            });
+            $("nav > ul > li").mouseout(function(){
+                $(this).find(".submn").stop().slideUp();
+            });
+        });
+    </script>
+    
+
+</body>
+</html>
